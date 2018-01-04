@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B86AEC2DC6F87356F6C9FE94BEBAA99 /* PluggableTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 575E736574A5046CBB3992AFC4A57C6D /* PluggableTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63DD2E728022612CD3ADEBE6655CF169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		67BE3427D496C5D43BA4A2C5091C394C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC34C703E2654CA54DCA7456E8E91C /* ReplaceMe.swift */; };
+		A020986778269C1E327BD228E637279D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C38E8ACF3E24CB87E637952C39ACC8E5 /* Pods-PluggableTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 248556A23DBA5AB67ED2448761DC9CF4 /* Pods-PluggableTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1FB8E43C65D10A4F9181B35A683865 /* Pods-PluggableTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21303D93F42F50400B23D77720829269 /* Pods-PluggableTableView_Tests-dummy.m */; };
+		FE387FB19FFBDF31AB63DEC75270A196 /* PluggableTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E1D46FE95D5EECDD09B23A3E286C7 /* PluggableTableView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E66EC200CA757B355D7E95F0584D49BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 370E2E6CE7D6C6E14AD3FA937392A64E;
+			remoteInfo = PluggableTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0028F35905465753EC2580B3965207FD /* PluggableTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PluggableTableView-prefix.pch"; sourceTree = "<group>"; };
+		020E9792A9527386D5C1030AE12C1945 /* PluggableTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PluggableTableView.modulemap; sourceTree = "<group>"; };
+		0CFC34C703E2654CA54DCA7456E8E91C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PluggableTableView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		21303D93F42F50400B23D77720829269 /* Pods-PluggableTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PluggableTableView_Tests-dummy.m"; sourceTree = "<group>"; };
+		248556A23DBA5AB67ED2448761DC9CF4 /* Pods-PluggableTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PluggableTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3407277EFEF6720D735B0CFC3E28F5F8 /* PluggableTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PluggableTableView.framework; path = PluggableTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1A2DA5B5C2FC0B9FF2F462D91CA366 /* Pods_PluggableTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PluggableTableView_Tests.framework; path = "Pods-PluggableTableView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DCE34414CB3E65A3841BA1C4A6C088 /* Pods-PluggableTableView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PluggableTableView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		540E1D46FE95D5EECDD09B23A3E286C7 /* PluggableTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PluggableTableView-dummy.m"; sourceTree = "<group>"; };
+		575E736574A5046CBB3992AFC4A57C6D /* PluggableTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PluggableTableView-umbrella.h"; sourceTree = "<group>"; };
+		65DE5C261BFEB76F7F99FCE7DA7F34A8 /* PluggableTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PluggableTableView.xcconfig; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A1B93714BD62497E9ACBBB14DDA6F67 /* Pods-PluggableTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PluggableTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4A806543F1F89333129F8FAFE32CBD1 /* Pods-PluggableTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PluggableTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B58B5C16AF8B9A407775C1A2B9CC85B3 /* Pods-PluggableTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PluggableTableView_Tests.modulemap"; sourceTree = "<group>"; };
+		BD874752A2760F959A3474FC188ED7CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD2506A5AE502605E07CCC98A3990DE /* Pods-PluggableTableView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PluggableTableView_Tests-resources.sh"; sourceTree = "<group>"; };
+		DAA94126166F6C37CE6A9BC1E2795378 /* Pods-PluggableTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PluggableTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E569F5F0F1698F600D6D1EFC467D4AAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE84A23F43A0CE613BDFB99EAC69C69B /* Pods-PluggableTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PluggableTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AB9A06AA77289C99124825D03754A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A020986778269C1E327BD228E637279D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D4075E8BD3FD898CB2C9472E700CC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DD2E728022612CD3ADEBE6655CF169 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044A10F9885DF5F2D6928F75D74B7202 /* PluggableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC34C703E2654CA54DCA7456E8E91C /* ReplaceMe.swift */,
+				4DB9B436B3E44CC3A7D3A8957B10DA7E /* Support Files */,
+			);
+			name = PluggableTableView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3D23FC601F3F45461AD3A1EAB54E4C76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3407277EFEF6720D735B0CFC3E28F5F8 /* PluggableTableView.framework */,
+				3F1A2DA5B5C2FC0B9FF2F462D91CA366 /* Pods_PluggableTableView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EFFC7B80A7370AA2FB778B5352F4D10 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				044A10F9885DF5F2D6928F75D74B7202 /* PluggableTableView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4A5F975AC50436E18B600EC0E7936E4B /* Pods-PluggableTableView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E569F5F0F1698F600D6D1EFC467D4AAE /* Info.plist */,
+				B58B5C16AF8B9A407775C1A2B9CC85B3 /* Pods-PluggableTableView_Tests.modulemap */,
+				9A1B93714BD62497E9ACBBB14DDA6F67 /* Pods-PluggableTableView_Tests-acknowledgements.markdown */,
+				EE84A23F43A0CE613BDFB99EAC69C69B /* Pods-PluggableTableView_Tests-acknowledgements.plist */,
+				21303D93F42F50400B23D77720829269 /* Pods-PluggableTableView_Tests-dummy.m */,
+				52DCE34414CB3E65A3841BA1C4A6C088 /* Pods-PluggableTableView_Tests-frameworks.sh */,
+				CDD2506A5AE502605E07CCC98A3990DE /* Pods-PluggableTableView_Tests-resources.sh */,
+				248556A23DBA5AB67ED2448761DC9CF4 /* Pods-PluggableTableView_Tests-umbrella.h */,
+				A4A806543F1F89333129F8FAFE32CBD1 /* Pods-PluggableTableView_Tests.debug.xcconfig */,
+				DAA94126166F6C37CE6A9BC1E2795378 /* Pods-PluggableTableView_Tests.release.xcconfig */,
+			);
+			name = "Pods-PluggableTableView_Tests";
+			path = "Target Support Files/Pods-PluggableTableView_Tests";
+			sourceTree = "<group>";
+		};
+		4DB9B436B3E44CC3A7D3A8957B10DA7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD874752A2760F959A3474FC188ED7CC /* Info.plist */,
+				020E9792A9527386D5C1030AE12C1945 /* PluggableTableView.modulemap */,
+				65DE5C261BFEB76F7F99FCE7DA7F34A8 /* PluggableTableView.xcconfig */,
+				540E1D46FE95D5EECDD09B23A3E286C7 /* PluggableTableView-dummy.m */,
+				0028F35905465753EC2580B3965207FD /* PluggableTableView-prefix.pch */,
+				575E736574A5046CBB3992AFC4A57C6D /* PluggableTableView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PluggableTableView";
+			sourceTree = "<group>";
+		};
+		7A72AF27304278BC2700242D0C64DDEB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F975AC50436E18B600EC0E7936E4B /* Pods-PluggableTableView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3EFFC7B80A7370AA2FB778B5352F4D10 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3D23FC601F3F45461AD3A1EAB54E4C76 /* Products */,
+				7A72AF27304278BC2700242D0C64DDEB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		57159D272B08EC7E5C56920FE1E19CEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B86AEC2DC6F87356F6C9FE94BEBAA99 /* PluggableTableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB36F8137EE8646D5960FFB3FBECFCBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38E8ACF3E24CB87E637952C39ACC8E5 /* Pods-PluggableTableView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		370E2E6CE7D6C6E14AD3FA937392A64E /* PluggableTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D97D11C751BA769E5F8876E111FE79 /* Build configuration list for PBXNativeTarget "PluggableTableView" */;
+			buildPhases = (
+				7509AB415881688D4A835DD2015B7188 /* Sources */,
+				4AB9A06AA77289C99124825D03754A5B /* Frameworks */,
+				57159D272B08EC7E5C56920FE1E19CEE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PluggableTableView;
+			productName = PluggableTableView;
+			productReference = 3407277EFEF6720D735B0CFC3E28F5F8 /* PluggableTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D665D10E72CF99B4A77BE88E3EF8EB0B /* Pods-PluggableTableView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3997473E52CC07CAF13363452F690CB9 /* Build configuration list for PBXNativeTarget "Pods-PluggableTableView_Tests" */;
+			buildPhases = (
+				2A4875F11A15541FAE07DF6FB125E360 /* Sources */,
+				52D4075E8BD3FD898CB2C9472E700CC2 /* Frameworks */,
+				AB36F8137EE8646D5960FFB3FBECFCBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3E3360792A577AE7288B92C975944C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-PluggableTableView_Tests";
+			productName = "Pods-PluggableTableView_Tests";
+			productReference = 3F1A2DA5B5C2FC0B9FF2F462D91CA366 /* Pods_PluggableTableView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3D23FC601F3F45461AD3A1EAB54E4C76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				370E2E6CE7D6C6E14AD3FA937392A64E /* PluggableTableView */,
+				D665D10E72CF99B4A77BE88E3EF8EB0B /* Pods-PluggableTableView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A4875F11A15541FAE07DF6FB125E360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1FB8E43C65D10A4F9181B35A683865 /* Pods-PluggableTableView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7509AB415881688D4A835DD2015B7188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE387FB19FFBDF31AB63DEC75270A196 /* PluggableTableView-dummy.m in Sources */,
+				67BE3427D496C5D43BA4A2C5091C394C /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3E3360792A577AE7288B92C975944C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PluggableTableView;
+			target = 370E2E6CE7D6C6E14AD3FA937392A64E /* PluggableTableView */;
+			targetProxy = E66EC200CA757B355D7E95F0584D49BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62292D14E2F30764B85BEA6FA95005D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65DE5C261BFEB76F7F99FCE7DA7F34A8 /* PluggableTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PluggableTableView/PluggableTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PluggableTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PluggableTableView/PluggableTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PluggableTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		986E9DE8B7737D9B6AD2734AF4D1CDD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A806543F1F89333129F8FAFE32CBD1 /* Pods-PluggableTableView_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PluggableTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PluggableTableView_Tests/Pods-PluggableTableView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PluggableTableView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B13DABA21A19BFA1FC95E028C05DBDD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65DE5C261BFEB76F7F99FCE7DA7F34A8 /* PluggableTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PluggableTableView/PluggableTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PluggableTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PluggableTableView/PluggableTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PluggableTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA59D1EF9C6E977CF526FAF2383A2CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA94126166F6C37CE6A9BC1E2795378 /* Pods-PluggableTableView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PluggableTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PluggableTableView_Tests/Pods-PluggableTableView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PluggableTableView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3997473E52CC07CAF13363452F690CB9 /* Build configuration list for PBXNativeTarget "Pods-PluggableTableView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986E9DE8B7737D9B6AD2734AF4D1CDD0 /* Debug */,
+				DA59D1EF9C6E977CF526FAF2383A2CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D97D11C751BA769E5F8876E111FE79 /* Build configuration list for PBXNativeTarget "PluggableTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62292D14E2F30764B85BEA6FA95005D1 /* Debug */,
+				B13DABA21A19BFA1FC95E028C05DBDD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

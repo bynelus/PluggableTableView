@@ -1,0 +1,22 @@
+{
+  "name": "PluggableTableView",
+  "version": "0.1.0",
+  "summary": "A short description of PluggableTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/NielsKoole/PluggableTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "NielsKoole": "niels@made2pay.com"
+  },
+  "source": {
+    "git": "https://github.com/NielsKoole/PluggableTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PluggableTableView/Classes/**/*"
+}

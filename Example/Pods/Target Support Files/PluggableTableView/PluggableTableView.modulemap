@@ -1,0 +1,6 @@
+framework module PluggableTableView {
+  umbrella header "PluggableTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
