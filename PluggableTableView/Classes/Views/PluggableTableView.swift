@@ -10,7 +10,7 @@ import UIKit
 
 public class PluggableTableView: UITableView
 {
-    var autoSizingEnabled: Bool = true
+    public var autoSizingEnabled: Bool = true
     private var sections: [PluggableTableSection] = []
     private var cellTypeRegistrations: [UITableViewCell.Type] = []
     private var headerFooterTypeRegistrations: [UITableViewHeaderFooterView.Type] = []
