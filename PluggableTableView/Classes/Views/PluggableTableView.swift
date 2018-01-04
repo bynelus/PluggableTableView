@@ -103,8 +103,10 @@ extension PluggableTableView: UITableViewDelegate
     }
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        guard let header = sections[section].header, !autoSizingEnabled else { return UITableViewAutomaticDimension }
-        return header.height(for: tableView.bounds.size.width)
+        guard !autoSizingEnabled, let height = sections[section].header?.height(for: tableView.bounds.size.width) else {
+            return UITableViewAutomaticDimension
+        }
+        return height
     }
     
     public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -113,7 +115,9 @@ extension PluggableTableView: UITableViewDelegate
     }
     
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        guard let footer = sections[section].footer, !autoSizingEnabled else { return UITableViewAutomaticDimension }
-        return footer.height(for: tableView.bounds.size.width)
+        guard !autoSizingEnabled, let height = sections[section].footer?.height(for: tableView.bounds.size.width) else {
+            return UITableViewAutomaticDimension
+        }
+        return height
     }
 }

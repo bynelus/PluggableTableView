@@ -12,5 +12,5 @@ public protocol PluggableTableHeaderFooter
     var viewType: UITableViewHeaderFooterView.Type { get }
     
     func view(from tableView: UITableView, section: Int) -> UITableViewHeaderFooterView?
-    func height(for width: CGFloat) -> CGFloat
+    func height(for width: CGFloat) -> CGFloat?
 }

@@ -16,6 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 - Swift 4.0
+- iOS 9.0
 
 ## Installation
 
@@ -28,8 +29,8 @@ pod 'PluggableTableView'
 
 ## Summary
 
-Showing a list is something you can see in almost every app. PluggableTableView becomes handy if you want to show a simple list that should be extendable.
-You can add all kinds of cells, headers and footers by just providing a new view model. View Models seperates business logic from the controller and can easily be tested. This configuration is open for extendability and close for modification. 
+Showing a list is something you can see in almost every app. PluggableTableView becomes handy if you want to show a simple list that should be extendable and clean.
+You can add all kinds of cells, headers and footers by just providing a specific view model. View Models seperates business logic from the controller and can easily be tested. This configuration is open for extendability and close for modification. 
 
 ## Features
 
@@ -52,6 +53,7 @@ class ViewController: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.autoSizingEnabled = true
         tableView.pluggableDataSource = self
     }
 }
@@ -59,7 +61,7 @@ class ViewController: UIViewController
 extension ViewController: PluggableTableViewDataSource
 {
     func pluggableSections() -> [PluggableTableSection] {
-        return []
+        //TODO: Needs to be implemented
     }
 }
 ```
@@ -101,7 +103,10 @@ class CellTitleViewModel: PluggableTableViewModel
         return cell
     }
     
-    func height(for width: CGFloat) -> CGFloat { return 0 }
+    func height(for width: CGFloat) -> CGFloat? { 
+    	// We return `nil` here because the cell has been setup for auto-sizing.
+        return nil
+    }
 }
 ```
 
