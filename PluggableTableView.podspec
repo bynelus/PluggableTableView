@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'PluggableTableView provides a TableView to work easily with ViewModels.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+PluggableTableView provides a tableview working with viewmodels to use for easy lists.
                        DESC
 
   s.homepage         = 'https://github.com/NielsKoole/PluggableTableView'

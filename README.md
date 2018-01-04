@@ -22,7 +22,7 @@ pod 'PluggableTableView'
 
 ## Author
 
-NielsKoole, niels@made2pay.com
+NielsKoole, me@nielskoole.nl
 
 ## License
 
