@@ -48,19 +48,19 @@ import PluggableTableView
 
 class ViewController: UIViewController
 {
-  @IBOutlet weak var tableView: PluggableTableView!
+    @IBOutlet weak var tableView: PluggableTableView!
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    tableView.pluggableDataSource = self
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.pluggableDataSource = self
+    }
 }
 
 extension ViewController: PluggableTableViewDataSource
 {
-  func pluggableSections() -> [PluggableTableSection] {
-    return []
-  }
+    func pluggableSections() -> [PluggableTableSection] {
+        return []
+    }
 }
 ```
 
@@ -70,15 +70,15 @@ Create a section view model that specifies which header / footer and cells to sh
 ```swift
 class DefaultSection: PluggableTableSection
 {
-  let header: PluggableTableHeaderFooter?
-  let viewModels: [PluggableTableViewModel]
-  let footer: PluggableTableHeaderFooter?
+    let header: PluggableTableHeaderFooter?
+    let viewModels: [PluggableTableViewModel]
+    let footer: PluggableTableHeaderFooter?
     
-  init(viewModels: [PluggableTableViewModel], header: PluggableTableHeaderFooter? = nil, footer: PluggableTableHeaderFooter? = nil) {
-    self.viewModels = viewModels
-    self.header = header
-    self.footer = footer
-  }
+    init(viewModels: [PluggableTableViewModel], header: PluggableTableHeaderFooter? = nil, footer: PluggableTableHeaderFooter? = nil) {
+        self.viewModels = viewModels
+        self.header = header
+        self.footer = footer
+    }
 }
 ```
 
@@ -86,22 +86,22 @@ Then you only need to specify your cell view model, which can be literally anyth
 ```swift
 class CellTitleViewModel: PluggableTableViewModel
 {
-  typealias C = YourTitleCell
+    typealias C = YourTitleCell
 
-  let model: Model // The model you want to map to this view model.
-  var cellType: UITableViewCell.Type = C.self
+    let model: Model // The model you want to map to this view model.
+    var cellType: UITableViewCell.Type = C.self
     
-  init(model: Model) {
-    self.model = model
-  }
+    init(model: Model) {
+        self.model = model
+    }
     
-  func cell(from tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: cellType.identifier, for: indexPath) as! C
-    cell.title = "\(model.title) \(model.something)"
-    return cell
-  }
+    func cell(from tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellType.identifier, for: indexPath) as! C
+        cell.title = "\(model.title) \(model.something)"
+        return cell
+    }
     
-  func height(for width: CGFloat) -> CGFloat { return 0 }
+    func height(for width: CGFloat) -> CGFloat { return 0 }
 }
 ```
 
@@ -112,16 +112,16 @@ import PluggableTableView
 
 class ViewController: UIViewController
 {
-  // Configure the view..
+    // Configure the view..
 }
 
 extension ViewController: PluggableTableViewDataSource
 {
-  func pluggableSections() -> [PluggableTableSection] {
-    let viewModels = models.map({ CellTitleViewModel(model: $0) })
-    let singleSection = DefaultSection(viewModels: viewModels) 
-    return [singleSection]
-  }
+    func pluggableSections() -> [PluggableTableSection] {
+        let viewModels = models.map({ CellTitleViewModel(model: $0) })
+        let singleSection = DefaultSection(viewModels: viewModels) 
+        return [singleSection]
+    }
 }
 ```
 
