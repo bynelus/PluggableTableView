@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PluggableTableView_Tests' do
+  pod 'PluggableTableView', :path => '../'
+  
+  
+end
