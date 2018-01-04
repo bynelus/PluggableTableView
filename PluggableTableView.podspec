@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 PluggableTableView provides a tableview working with viewmodels to use for easy lists.
                        DESC
 
-  s.homepage         = 'https://github.com/NielsKoole/PluggableTableView'
+  s.homepage         = 'https://github.com/bynelus/PluggableTableView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'NielsKoole' => 'me@nielskoole.nl' }
   s.source           = { :git => 'https://github.com/bynelus/PluggableTableView.git', :tag => s.version.to_s }
