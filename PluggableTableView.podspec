@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PluggableTableView'
-  s.version          = '0.2.0'
-  s.summary          = 'PluggableTableView provides a TableView to work easily with ViewModels.'
+  s.version          = '0.3.0'
+  s.summary          = 'PluggableTableView provides a TableView to work easily with View Models.'
 
   s.description      = <<-DESC
 PluggableTableView provides an UITableView that does all the work for you. The only thing you need to do is provide a list of view models.
