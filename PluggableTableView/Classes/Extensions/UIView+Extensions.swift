@@ -8,6 +8,6 @@
 import UIKit
 
 extension UIView {
-    static var reuseIdentifier: String { return String(describing: self) }
+    static internal var reuseIdentifier: String { return String(describing: self) }
 }
 

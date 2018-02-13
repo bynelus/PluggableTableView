@@ -9,9 +9,9 @@
 import UIKit
 
 public class PluggableTableViewModel {
-    var cellType: UITableViewCell.Type = UITableViewCell.self
+    public var cellType: UITableViewCell.Type = UITableViewCell.self
     
-    func height(for width: CGFloat) -> CGFloat? {
+    public func height(for width: CGFloat) -> CGFloat? {
         return nil
     }
 }

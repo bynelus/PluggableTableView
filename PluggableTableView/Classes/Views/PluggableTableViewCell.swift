@@ -8,5 +8,5 @@
 import UIKit
 
 public class PluggableTableViewCell<VM: PluggableTableViewModel>: UITableViewCell {
-    var viewModel: VM?
+    public var viewModel: VM?
 }
