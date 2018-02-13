@@ -8,7 +8,6 @@
 
 import UIKit
 
-public protocol PluggableTableViewDataSource
-{
+public protocol PluggableTableViewDataSource {
     func pluggableSections() -> [PluggableTableSection]
 }

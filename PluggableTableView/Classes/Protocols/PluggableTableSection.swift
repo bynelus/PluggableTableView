@@ -8,8 +8,7 @@
 
 import Foundation
 
-public protocol PluggableTableSection
-{
+public protocol PluggableTableSection {
     var header: PluggableTableHeaderFooter? { get }
     var viewModels: [PluggableTableViewModel] { get }
     var footer: PluggableTableHeaderFooter? { get }

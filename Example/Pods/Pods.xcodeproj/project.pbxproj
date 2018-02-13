@@ -14,9 +14,10 @@
 		D40AE1E01FFE79A800718EDB /* PluggableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AE1D91FFE79A800718EDB /* PluggableTableView.swift */; };
 		D40AE1E21FFE79A800718EDB /* PluggableTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AE1DD1FFE79A800718EDB /* PluggableTableSection.swift */; };
 		D40AE1E31FFE79A800718EDB /* PluggableTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AE1DE1FFE79A800718EDB /* PluggableTableViewDataSource.swift */; };
-		D40AE1E41FFE79A800718EDB /* PluggableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AE1DF1FFE79A800718EDB /* PluggableViewModel.swift */; };
+		D40AE1E41FFE79A800718EDB /* PluggableTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AE1DF1FFE79A800718EDB /* PluggableTableViewModel.swift */; };
 		D40AE1E61FFE7F0300718EDB /* PluggableTableHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AE1E51FFE7F0300718EDB /* PluggableTableHeaderFooter.swift */; };
 		D40AE1E81FFE859900718EDB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40AE1E71FFE859900718EDB /* UIView+Extensions.swift */; };
+		D40BEB6E20330F3B0025D330 /* PluggableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BEB6D20330F3B0025D330 /* PluggableTableViewCell.swift */; };
 		DE1FB8E43C65D10A4F9181B35A683865 /* Pods-PluggableTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21303D93F42F50400B23D77720829269 /* Pods-PluggableTableView_Tests-dummy.m */; };
 		FE387FB19FFBDF31AB63DEC75270A196 /* PluggableTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E1D46FE95D5EECDD09B23A3E286C7 /* PluggableTableView-dummy.m */; };
 /* End PBXBuildFile section */
@@ -52,9 +53,10 @@
 		D40AE1D91FFE79A800718EDB /* PluggableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluggableTableView.swift; sourceTree = "<group>"; };
 		D40AE1DD1FFE79A800718EDB /* PluggableTableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluggableTableSection.swift; sourceTree = "<group>"; };
 		D40AE1DE1FFE79A800718EDB /* PluggableTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluggableTableViewDataSource.swift; sourceTree = "<group>"; };
-		D40AE1DF1FFE79A800718EDB /* PluggableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluggableViewModel.swift; sourceTree = "<group>"; };
+		D40AE1DF1FFE79A800718EDB /* PluggableTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluggableTableViewModel.swift; sourceTree = "<group>"; };
 		D40AE1E51FFE7F0300718EDB /* PluggableTableHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluggableTableHeaderFooter.swift; sourceTree = "<group>"; };
 		D40AE1E71FFE859900718EDB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D40BEB6D20330F3B0025D330 /* PluggableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluggableTableViewCell.swift; sourceTree = "<group>"; };
 		DAA94126166F6C37CE6A9BC1E2795378 /* Pods-PluggableTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PluggableTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E569F5F0F1698F600D6D1EFC467D4AAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE84A23F43A0CE613BDFB99EAC69C69B /* Pods-PluggableTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PluggableTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				D40AE1D91FFE79A800718EDB /* PluggableTableView.swift */,
+				D40BEB6D20330F3B0025D330 /* PluggableTableViewCell.swift */,
 			);
 			name = Views;
 			path = PluggableTableView/Classes/Views;
@@ -199,7 +202,7 @@
 			children = (
 				D40AE1DD1FFE79A800718EDB /* PluggableTableSection.swift */,
 				D40AE1DE1FFE79A800718EDB /* PluggableTableViewDataSource.swift */,
-				D40AE1DF1FFE79A800718EDB /* PluggableViewModel.swift */,
+				D40AE1DF1FFE79A800718EDB /* PluggableTableViewModel.swift */,
 				D40AE1E51FFE7F0300718EDB /* PluggableTableHeaderFooter.swift */,
 			);
 			name = Protocols;
@@ -307,7 +310,8 @@
 				D40AE1E61FFE7F0300718EDB /* PluggableTableHeaderFooter.swift in Sources */,
 				FE387FB19FFBDF31AB63DEC75270A196 /* PluggableTableView-dummy.m in Sources */,
 				D40AE1E01FFE79A800718EDB /* PluggableTableView.swift in Sources */,
-				D40AE1E41FFE79A800718EDB /* PluggableViewModel.swift in Sources */,
+				D40AE1E41FFE79A800718EDB /* PluggableTableViewModel.swift in Sources */,
+				D40BEB6E20330F3B0025D330 /* PluggableTableViewCell.swift in Sources */,
 				D40AE1E21FFE79A800718EDB /* PluggableTableSection.swift in Sources */,
 				D40AE1E31FFE79A800718EDB /* PluggableTableViewDataSource.swift in Sources */,
 			);

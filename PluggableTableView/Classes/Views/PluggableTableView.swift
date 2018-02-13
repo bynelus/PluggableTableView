@@ -34,6 +34,7 @@ public class PluggableTableView: UITableView
         delegate = self
         estimatedRowHeight = 50.0
         separatorStyle = .none
+        register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.reuseIdentifier)
     }
     
     public override func reloadData() {
@@ -53,7 +54,8 @@ public class PluggableTableView: UITableView
 
         for type in unregisteredTypes {
             guard headerFooterTypeRegistrations.index(where: { $0 == type }) == nil else { continue }
-            register(UINib(nibName: type.identifier, bundle: Bundle(for: type)), forHeaderFooterViewReuseIdentifier: type.identifier)
+            let identifier = type.reuseIdentifier
+            register(UINib(nibName: identifier, bundle: Bundle(for: type)), forHeaderFooterViewReuseIdentifier: identifier)
             headerFooterTypeRegistrations.append(type)
         }
     }
@@ -67,7 +69,7 @@ public class PluggableTableView: UITableView
         for cellType in unregisteredCellTypes {
             guard cellTypeRegistrations.index(where: { $0 == cellType }) == nil else { continue }
             
-            let identifier = cellType.identifier
+            let identifier = cellType.reuseIdentifier
             register(UINib(nibName: identifier, bundle: Bundle(for: cellType)), forCellReuseIdentifier: identifier)
             cellTypeRegistrations.append(cellType)
         }
@@ -86,12 +88,19 @@ extension PluggableTableView: UITableViewDataSource
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         guard !autoSizingEnabled else { return UITableViewAutomaticDimension }
-        return sections[indexPath.section].viewModels[indexPath.row].height(for: tableView.bounds.size.width)
+        guard let height = sections[indexPath.section].viewModels[indexPath.row].height(for: tableView.bounds.size.width) else { return 0 }
+        return height
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let viewModel = sections[indexPath.section].viewModels[indexPath.item]
-        return viewModel.cell(from: tableView, indexPath: indexPath)
+        let identifier = viewModel.cellType.reuseIdentifier
+        if let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? PluggableTableViewCell<PluggableTableViewModel> {
+            cell.viewModel = viewModel
+            return cell
+        }
+        
+        return tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier, for: indexPath)
     }
 }
 
