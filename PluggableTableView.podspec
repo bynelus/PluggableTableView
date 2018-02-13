@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PluggableTableView'
-  s.version          = '0.4.2'
+  s.version          = '0.4.3'
   s.summary          = 'PluggableTableView provides a TableView to work easily with View Models.'
 
   s.description      = <<-DESC

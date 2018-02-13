@@ -12,3 +12,9 @@ public protocol PluggableTableViewModel {
     var cellType: UITableViewCell.Type { get }
     func height(for width: CGFloat) -> CGFloat?
 }
+
+public extension PluggableTableViewModel {
+    public func height(for width: CGFloat) -> CGFloat? {
+        return nil
+    }
+}
