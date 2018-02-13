@@ -182,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				D40AE1D91FFE79A800718EDB /* PluggableTableView.swift */,
-				D40BEB6D20330F3B0025D330 /* PluggableTableViewCell.swift */,
 			);
 			name = Views;
 			path = PluggableTableView/Classes/Views;
@@ -204,6 +203,7 @@
 				D40AE1DE1FFE79A800718EDB /* PluggableTableViewDataSource.swift */,
 				D40AE1DF1FFE79A800718EDB /* PluggableTableViewModel.swift */,
 				D40AE1E51FFE7F0300718EDB /* PluggableTableHeaderFooter.swift */,
+				D40BEB6D20330F3B0025D330 /* PluggableTableViewCell.swift */,
 			);
 			name = Protocols;
 			path = PluggableTableView/Classes/Protocols;

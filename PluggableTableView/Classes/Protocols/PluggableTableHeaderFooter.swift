@@ -7,8 +7,7 @@
 
 import UIKit
 
-public protocol PluggableTableHeaderFooter
-{
+public protocol PluggableTableHeaderFooter {
     var viewType: UITableViewHeaderFooterView.Type { get }
     
     func view(from tableView: UITableView, section: Int) -> UITableViewHeaderFooterView?

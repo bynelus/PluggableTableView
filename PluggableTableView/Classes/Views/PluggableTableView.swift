@@ -95,12 +95,14 @@ extension PluggableTableView: UITableViewDataSource
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let viewModel = sections[indexPath.section].viewModels[indexPath.item]
         let identifier = viewModel.cellType.reuseIdentifier
-        if let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? PluggableTableViewCell<PluggableTableViewModel> {
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        
+        if let cell = cell as? PluggableTableViewCell,
+            let viewModel = viewModel as? PluggableTableViewCellViewModel {
             cell.viewModel = viewModel
-            return cell
         }
         
-        return tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifier, for: indexPath)
+        return cell
     }
 }
 

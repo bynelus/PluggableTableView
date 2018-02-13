@@ -8,10 +8,7 @@
 
 import UIKit
 
-public class PluggableTableViewModel {
-    public var cellType: UITableViewCell.Type = UITableViewCell.self
-    
-    public func height(for width: CGFloat) -> CGFloat? {
-        return nil
-    }
+public protocol PluggableTableViewModel {
+    var cellType: UITableViewCell.Type { get }
+    func height(for width: CGFloat) -> CGFloat?
 }
