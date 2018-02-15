@@ -97,8 +97,7 @@ extension PluggableTableView: UITableViewDataSource
         let identifier = viewModel.cellType.reuseIdentifier
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
-        if let cell = cell as? PluggableTableViewCell,
-            let viewModel = viewModel as? PluggableTableViewCellViewModel {
+        if let cell = cell as? PluggableTableViewCell {
             cell.viewModel = viewModel
         }
         

@@ -7,8 +7,6 @@
 
 import UIKit
 
-public protocol PluggableTableViewCellViewModel { }
-
 public protocol PluggableTableViewCell: AnyObject {
-    var viewModel: PluggableTableViewCellViewModel? { get set }
+    var viewModel: Any? { get set }
 }
